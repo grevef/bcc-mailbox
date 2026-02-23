@@ -57,5 +57,5 @@ CreateBlips()
 
 AddEventHandler('onResourceStop', function(resourceName)
     for _, blips in ipairs(BlipsCreated) do blips:Remove() end
-    DevPrint('Removed blips')
+    print('Removed blips') -- Temporary Fix.
 end)
