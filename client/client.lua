@@ -56,6 +56,9 @@ end
 CreateBlips()
 
 AddEventHandler('onResourceStop', function(resourceName)
-    for _, blips in ipairs(BlipsCreated) do blips:Remove() end
-    DevPrint('Removed blips')
+    for _, blip in ipairs(BlipsCreated) do
+        blip:Remove()
+    end
+
+    devPrint('Removed blips')
 end)
